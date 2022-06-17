@@ -1,0 +1,27 @@
+#map {
+	height: 100%;
+	width: 100%;
+}
+
+html, body {
+	margin: 0;
+}
+
+.traincapacity {
+	display: none;
+}
+
+.car img {
+	background-color: red;
+	margin: 50px;
+	border-radius: 50%;
+}
+
+main {
+	display: grid;
+	width: 100vw;
+	height: 100vh;
+	grid-template-columns: 40% 60%;
+	grid-template-rows: 100%;
+	margin: 0;
+}
