@@ -47,12 +47,14 @@ const onMarkerClick = (e) => {
 	getLiveboard(e.target._popup._content).then((liveboard) => {
 		const content = document.createElement('div');
 		const header = document.createElement('h1');
+		const paragraph = document.createElement('p');
 		header.textContent = liveboard.station;
 		content.appendChild(header);
 
 		liveboard.departures.departure.forEach((train) => {
-			console.log(train.vehicleinfo.shortname);
+			paragraph.textContent = train.vehicleinfo.shortnam;
 		});
+		content.appendChild(paragraph);
 		timeTable.replaceChildren(content);
 	});
 };
