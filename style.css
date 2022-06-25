@@ -5,6 +5,7 @@
 
 html, body {
 	margin: 0;
+	font-family: 'Roboto', sans-serif;
 }
 
 .traincapacity {
@@ -24,4 +25,28 @@ main {
 	grid-template-columns: 40% 60%;
 	grid-template-rows: 100%;
 	margin: 0;
+}
+
+main nav {
+	overflow-y: scroll;
+	background-color: #97d2f1;
+}
+
+.depboard div table {
+	font-size: 20px;
+	width: 100%;
+	border: none;
+	border-collapse: collapse
+}
+
+
+.depboard div table tbody tr td {
+	padding: 10px;
+}
+.depboard div table tbody tr:nth-child(2n) {
+	background-color: lightgrey;
+}
+
+.depboard div table tbody tr:hover {
+	background-color: rgb(164, 178, 243);
 }
